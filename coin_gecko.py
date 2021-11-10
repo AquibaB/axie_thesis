@@ -1,18 +1,9 @@
-import json
-import requests
 import pandas as pd
 import numpy as np
-from pathlib import Path
 from pycoingecko import CoinGeckoAPI
-from pathlib import Path
 import time
 import datetime
-from datetime import datetime, timedelta, date
-import csv
-from etherscan import Etherscan
-import os
-from dotenv import load_dotenv
-load_dotenv()
+from datetime import datetime
 
 # Script to parse the market capitalization of Axie Infinity
 cg = CoinGeckoAPI()
