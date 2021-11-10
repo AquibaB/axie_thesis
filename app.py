@@ -5,7 +5,7 @@ import requests
 import pandas as pd
 import numpy as np
 from pathlib import Path
-from pycoingecko import CoinGeckoAPI
+#from pycoingecko import CoinGeckoAPI
 from pathlib import Path
 import time
 import datetime
