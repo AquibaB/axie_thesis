@@ -47,13 +47,13 @@ st.markdown("#### 1. Purchase and stake $AXS")
 st.write("- Strong user monetization results in a sizable treasury accruing to AXS tokenholders.")
 st.write("- Play-to-earn tokenomics and new gameplays attract players to Axie's ecosystem.")
 st.write("- Sky Mavis' ownership of AXS (21% of total supply) aligns incentives with AXS holders.")
-st.write("- The majority of AXS tokens are locked in the Ronin sidechain, indicating the ecosystem's strong participation by tokenholders in the ecosystem.")
+st.write("- The majority of AXS tokens are locked in the Ronin sidechain, indicating strong participation by tokenholders in the ecosystem.")
 st.write("- Staking AXS returns an attractive yield (~120% APR.)")
 
 st.markdown("##### ")
 st.markdown("#### 2. Consider purchasing Land NFTs, or wait for Land Phase II sale.")
 st.write("- Land is the most valuable in-game scarce NFT. Only 25% of Lunacia's landmass has been sold.")
-st.write("- Planned added functionality, such as custom Land gameplays and a Lunacia SDK to create virtual worlds, should add value to land NFTs.")
+st.write("- Planned added functionality, such as new Land gameplays and a Lunacia SDK to create virtual worlds, should add value to Land NFTs.")
 
 ####### THESIS #######
 
@@ -64,7 +64,7 @@ st.markdown("---")
 st.write("Axie Infinity is the leading blockchain game in Web3. It has a high probability of being part of a future Metaverse because of 1) a growing network community (+2M current DAUs) and 2) vibrant token economics underpinned by NFTs generating income for players and fees for Axie Infinity.")
 st.write("Sky Mavis is executing well on the Axie Infinity roadmap. The recent release of Ronin's Katana DEX (over $1B TVL) suggests that the team wants to position Ronin as the leading blockchain layer for crypto gaming, not just for Axie Infinity.")
 st.write("AXS's market cap increased from $500M to $10B in the last ten months, driven by exponential user growth. New players fueled demand for Axies that led to an Axie breeding egg boom. As a result, Axie Infinity's revenues surpassed $1B over this timeframe (mostly from breeding fees.) AXS' treasury, from which tokenholders will benefit in distributions, recently reached $3B.")
-st.write("The game offers three kinds of NFTs: Axie, Land, and Item. The land is more desirable because supply is limited and is a central piece of future gameplay.")
+st.write("The game offers three kinds of NFTs: Axies, Lands, and Items. The land is more desirable because supply is limited and is a central piece of future gameplay.")
 st.write("Axie Infinity's bear case is that value creation depends on adding new players constrained by high entry costs (~$900 for 3 Axies.) However, Axie's P2E model mainly attracts players from EM, where Axie's income is higher than domestic salaries. In addition, sponsoring programs overcome the requirement for an initial capital outlay to onboard new players.")
 
 ####### TOKEN ECONOMICS #######
@@ -83,18 +83,16 @@ with st.expander("Key Metrics"):
         st.metric(label="Treasury Balance", value="+$3 Billion")
         
 st.write("- Two types of in-game tokens:")
-st.write("1. AXS is used for governance, collect breeding fees, and for earning staking rewards.")
+st.write("1. AXS is used for governance, collect breeding fees, and earn staking rewards.")
 st.write("2. SLP is minted in battles and burnt when breeding Axies.")
 
 with st.expander("Market data"):
-    st.markdown("2. $AXS is used for governance rights, breeding fee paid to Treasury, and for earning staking rewards.")
     st.write(axs_mk_fig, width=300)
 
     st.write(slp_mk_fig, width=300)
-    # CHANGE IN SLP BREEDING FEES IN SEPT 28 AS THE PRICE OF SLP CRATERED BUT MK CAP STAYED - MINTING TOO MUCH SLP
     
 st.write("- Revenues are generated from breeding fees (1 AXS/breed) and a 4.25% Marketplace fee.")
-st.write("- The marketplace enables trading of NFT assets (Axies, Land, and Items) and onboarding new players. Cumulative volume from trading NFTs surpassed $3B.")
+st.write("- The marketplace enables trading of NFT assets (Axies, Lands, and Items) and onboarding new players. Cumulative volume from trading NFTs surpassed $3B.")
 with st.expander("Fundamental data"):
     st.markdown("- Explosion in user growth was driven by the migration from Ethereum Mainnet to Ronin sidechain (April 28, 2021).")
     st.write(dau_fig, width=300)
@@ -106,13 +104,13 @@ with st.expander("Fundamental data"):
     st.markdown("- Breeding fees have continued to increase despite Axie's cut in breeding take-rate from 2 AXS to 1 AXS on September 23, 2021")
     st.write(breeding_fig, width=350)
 
-    st.markdown("- Axie's NFT Markeplace has seen cumulative volume of ~$3B and generated a 4.25% fee on every transaction.")
+    st.markdown("- Axie's NFT Markeplace has recorded cumulative volume of ~$3B and generated a 4.25% fee on every transaction.")
     st.write(vol_fig, width=300)
 
     st.markdown("- Axie Infinity's treasury grew from $5K to over $3 Billion that accrues to AXS holders.")
     st.write(treasury_fig, width=300)
 
-st.write("- P2E model allows players from EM (mainly from the Philippines and Indonesia, countries with large populations and young demographics) to earn higher incomes than domestic salaries.")
+st.write("- P2E model allows players from EM (countries with large populations and young demographics such as the Philippines and Indonesia) to earn higher incomes than domestic salaries. Therefore, Axie can attract a large pool of potential players.")
 with st.expander("Country demographics"):
     col1, col2 = st.columns(2)
     with col1:
@@ -142,11 +140,10 @@ st.title("Community")
 st.markdown("---")
 
 st.write("- A vibrant community creates loyalty to Axie Infinity and discourages churn.")
-st.write("- Axie Infinity's Discord channel is usually complete (capped at 800K members.)")
-st.write("- Users continually create content to help players, like Axie World (guides, tools, and economics), Chillaxie (marketplace insights and breeding tool), or Axie Pulse (newsletter).")
+st.write("- Axie Infinity's Discord channel is usually full (capped at 800K members.)")
 with st.expander("Discord data"):
     st.write(discord_fig, width=300)    
-
+st.write("- Users continually create content to help players, like Axie World (guides, tools, and economics), Chillaxie (marketplace insights and breeding tool), or Axie Pulse (newsletter).")
 st.write("- The majority of AXS tokens (~70%) are locked in the Ronin sidechain, indicating strong participation by tokenholders in the ecosystem.")
 
 ####### MARKET #######
@@ -156,7 +153,7 @@ st.title("Crypto gaming market")
 st.markdown("---")
 
 st.write("- The industry has seen tremendous growth in recent months. Some tokens have reached record valuations even before games are launched, and most use the P2E model pioneered by Axie Infinity.")
-with st.expander("Market capitalization of top crypto games"):
+with st.expander("Market capitalization of top blockchain games"):
     st.write(games_mc_fig, width=300)
 
 st.write("- Even though many games use BSC for hosting, new L2 solutions such as Immutable X aim to become the standard NFT gaming solution on Ethereum.")
@@ -183,6 +180,6 @@ with st.expander("Change in Axie economics (Sep 23, 2021)"):
     
 st.write("- A downturn in the market for NFTs would diminish the value of the NFT assets in Axie Infinity.")
 st.write("- Resumed issuance of AXS, after months on pause due to Ronin migration, is a tailwind to prices, although likely net positive for staking AXS.")
-with st.expander("On-chain analysis"):
+with st.expander("AXS issuance"):
     st.write(issuance_fig, width=300)
 

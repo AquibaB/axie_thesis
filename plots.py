@@ -51,34 +51,6 @@ def make_plot(Series1, Series2):
     return fig
 
 ###########
-# SLP MK CAP PLOT 
-###########
-
-# Create a line graph of SLP's Market Capitalization and Price
-slp_mk_fig = make_plot(axie_mc['SLP Mk Cap'], axie_mc['SLP Price'])
-
-# single line px.line(axie_mc, x=axie_mc.index, y='SLP Mk Cap')
-
-# Add figure title, legend, and size
-slp_mk_fig.update_layout(
-    title_text="SLP Market Cap and Price (USD)",
-    width=650,
-    height=500,
-    legend=dict(
-    orientation="h",
-    yanchor="bottom",
-    y=1,
-    xanchor="right",
-    x=0.2
-))
-# Set x-axis title
-slp_mk_fig.update_xaxes(title_text="Date", showgrid=False, nticks=20)
-slp_mk_fig.update_yaxes(title_text="SLP Market Cap (USD, Log)", secondary_y=False, tickformat="$,.0f", type='log', showgrid=False, nticks=5)
-slp_mk_fig.update_yaxes(title_text="SLP Price (USD, Log)", secondary_y=True, showgrid=False, nticks=5, type='log', tickformat=",.2f")
-
-slp_mk_fig.update_traces(fill='tozeroy', secondary_y=False, line_color='grey')
-
-###########
 # AXS MK CAP PLOT
 ###########
 
@@ -97,7 +69,7 @@ axs_mk_fig.update_layout(
     yanchor="bottom",
     y=1,
     xanchor="right",
-    x=0.2
+    x=0.22
 ))
 # Set x-axis title
 axs_mk_fig.update_xaxes(title_text="Date", showgrid=False, nticks=20)
@@ -105,6 +77,36 @@ axs_mk_fig.update_yaxes(title_text="AXS Market Cap (USD, Log)", secondary_y=Fals
 axs_mk_fig.update_yaxes(title_text="AXS Price (USD, Log)", secondary_y=True, showgrid=False, nticks=5, type='log', tickformat=",.2f")
 
 axs_mk_fig.update_traces(fill='tozeroy', secondary_y=False, line_color='grey')
+
+
+###########
+# SLP MK CAP PLOT 
+###########
+
+# Create a line graph of SLP's Market Capitalization and Price
+slp_mk_fig = make_plot(axie_mc['SLP Mk Cap'], axie_mc['SLP Price'])
+
+# single line px.line(axie_mc, x=axie_mc.index, y='SLP Mk Cap')
+
+# Add figure title, legend, and size
+slp_mk_fig.update_layout(
+    title_text="SLP Market Cap and Price (USD)",
+    width=650,
+    height=500,
+    legend=dict(
+    orientation="h",
+    yanchor="bottom",
+    y=1,
+    xanchor="right",
+    x=0.22
+))
+# Set x-axis title
+slp_mk_fig.update_xaxes(title_text="Date", showgrid=False, nticks=20)
+slp_mk_fig.update_yaxes(title_text="SLP Market Cap (USD, Log)", secondary_y=False, tickformat="$,.0f", type='log', showgrid=False, nticks=5)
+slp_mk_fig.update_yaxes(title_text="SLP Price (USD, Log)", secondary_y=True, showgrid=False, nticks=5, type='log', tickformat=",.2f")
+
+slp_mk_fig.update_traces(fill='tozeroy', secondary_y=False, line_color='grey')
+
 
 ###########
 # DAUs
@@ -125,7 +127,7 @@ dau_fig.update_layout(
     yanchor="bottom",
     y=1,
     xanchor="right",
-    x=0.3
+    x=0.35
 ))
 # Set x-axis title
 dau_fig.update_xaxes(title_text="Date", showgrid=False, nticks=20)
@@ -163,7 +165,7 @@ rev_fig.update_layout(
     yanchor="bottom",
     y=1,
     xanchor="left",
-    x=-0.13
+    x=-0.2
 ))
 # Set x-axis title
 rev_fig.update_xaxes(title_text="Date", showgrid=False, nticks=20)
@@ -197,7 +199,7 @@ breeding_fig.update_layout(
     yanchor="bottom",
     y=1,
     xanchor="left",
-    x=-0.05
+    x=-0.1
 ))
 # Set x-axis title
 breeding_fig.update_xaxes(title_text="Date", showgrid=False, nticks=20)
@@ -239,7 +241,7 @@ vol_fig.update_layout(
     yanchor="bottom",
     y=1,
     xanchor="left",
-    x=-0.05
+    x=-0.2
 ))
 # Set x-axis title
 vol_fig.update_xaxes(title_text="Date", showgrid=False, nticks=20)
@@ -274,7 +276,7 @@ treasury_fig.update_layout(
     yanchor="bottom",
     y=1,
     xanchor="right",
-    x=0.2
+    x=0.25
 ))
 # Set x-axis title
 treasury_fig.update_xaxes(title_text="Date", showgrid=False, nticks=20)
@@ -327,7 +329,7 @@ issuance_fig.add_trace(
     )
 
 issuance_fig.update_layout(
-    title_text="Issuance and Ronin sidechain",
+    title_text="Axie Infinity Shard issuance and AXS locked in Ronin sidechain",
     width=650,
     height=500,
     legend=dict(
