@@ -11,7 +11,7 @@ import time
 import datetime
 from datetime import datetime, timedelta, date
 import csv
-from etherscan import Etherscan
+#from etherscan import Etherscan
 import os
 from dotenv import load_dotenv
 load_dotenv()
