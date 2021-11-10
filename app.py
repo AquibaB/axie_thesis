@@ -13,8 +13,8 @@ from datetime import datetime, timedelta, date
 import csv
 #from etherscan import Etherscan
 import os
-from dotenv import load_dotenv
-load_dotenv()
+#from dotenv import load_dotenv
+#load_dotenv()
 
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
