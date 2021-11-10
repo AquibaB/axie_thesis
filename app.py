@@ -144,7 +144,7 @@ st.write("- Axie Infinity's Discord channel is usually full (capped at 800K memb
 with st.expander("Discord data"):
     st.write(discord_fig, width=300)    
 st.write("- Users continually create content to help players, like Axie World (guides, tools, and economics), Chillaxie (marketplace insights and breeding tool), or Axie Pulse (newsletter).")
-st.write("- The majority of AXS tokens (~70%) are locked in the Ronin sidechain, indicating strong participation by tokenholders in the ecosystem.")
+st.write("- Strong participation by tokenholders in the ecosystem since 1) the majority of AXS tokens (~70%) are locked in the Ronin sidechain and 2) staked AXS amount to ~50% of Ronin's AXS supply.")
 
 ####### MARKET #######
 
