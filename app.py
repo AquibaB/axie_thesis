@@ -23,18 +23,14 @@ from plots import make_plot, slp_mk_fig, axs_mk_fig, dau_fig, rev_fig, breeding_
 # CREATE STREAMLIT APP
 #########################################################################
 
-sferion_logo_url = 'https://www.criptotendencias.com/wp-content/uploads/2021/11/Sfermion-cierra-una-ronda-de-financiacion-de-100-millones-de-dolares-para-la-industria-del-Metaverso.jpg'
 axie_infiniti_logo_url = 'https://i.blogs.es/067b7e/axie-infinity-portada/1366_2000.jpg'
 
 col1, col2 = st.columns(2)
 
-with col1:
-    st.image(sferion_logo_url, width=350)
-
 with col2:
     st.image(axie_infiniti_logo_url, width=380)
 
-st.markdown("## Axie Infinity Investment Thesis for Sfermion")
+st.markdown("## Axie Infinity investment thesis")
 st.markdown("##### *By Aquiba Benarroch, CFA*")
 
 ####### RECOMMENDATION #######
@@ -58,7 +54,7 @@ st.write("- Planned added functionality, such as new Land gameplays and a Lunaci
 ####### THESIS #######
 
 st.markdown("---")
-st.title("Thesis")
+st.title("Investment thesis")
 st.markdown("---")
 
 st.write("Axie Infinity is the leading blockchain game in Web3. It has a high probability of being part of a future Metaverse because of 1) a growing network community (+2M current DAUs) and 2) vibrant token economics underpinned by NFTs generating income for players and fees for Axie Infinity.")
@@ -73,7 +69,7 @@ st.markdown("---")
 st.title("Token economics")
 st.markdown("---")
 
-with st.expander("Key Metrics"):
+with st.expander("Key metrics"):
     col1, col2, col3 = st.columns(3)
     with col1:
         st.metric(label="Revenues (LTM)", value="+$1 Billion")
@@ -107,7 +103,7 @@ with st.expander("Fundamental data"):
     st.markdown("- Axie's NFT Markeplace has recorded cumulative volume of ~$3B and generated a 4.25% fee on every transaction.")
     st.write(vol_fig, width=300)
 
-    st.markdown("- Axie Infinity's treasury grew from $5K to over $3 Billion that accrues to AXS holders.")
+    st.markdown("- Axie Infinity's treasury is worth over $3 Billion and accrues to AXS holders.")
     st.write(treasury_fig, width=300)
 
 st.write("- P2E model allows players from EM (countries with large populations and young demographics such as the Philippines and Indonesia) to earn higher incomes than domestic salaries. Therefore, Axie can attract a large pool of potential players.")
@@ -121,7 +117,7 @@ with st.expander("Country demographics"):
 ####### TEAM #######
 
 st.markdown("---")
-st.title("Sky Mavis Team")
+st.title("Sky Mavis team")
 st.markdown("---")
 
 st.write("- Sky Mavis' ownership of AXS (21% of total supply) aligns incentives with AXS holders.")
@@ -168,7 +164,10 @@ st.write("- A slowdown in new player sign-ups is likely to hurt the Axie Infinit
 with st.expander("Change in Axie economics (Sep 23, 2021)"):
     st.write("- SLP price decline was driven by excessive minting of SLP which prompted an adjustment in breeding costs.")
     st.write(slp_mk_fig)
-    #st.markdown("# ")
+    st.write("SLP Supply")
+    st.image("https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Feb8a4350-5ded-4676-818f-1f15f341a358_779x407.png")
+    st.text("Source: Breeding Fee Adjustment & Axie Economics (The Lunacian newsletter, Sep 23, 2021)")
+    st.markdown("## ")
     col1, col2 = st.columns(2)
     with col1:
         st.write("Original breeding cost")
