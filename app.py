@@ -23,12 +23,9 @@ from plots import make_plot, slp_mk_fig, axs_mk_fig, dau_fig, rev_fig, breeding_
 # CREATE STREAMLIT APP
 #########################################################################
 
-axie_infiniti_logo_url = 'https://i.blogs.es/067b7e/axie-infinity-portada/1366_2000.jpg'
+axie_infiniti_logo_url = 'https://i.blogs.es/067b7e/axie-infinity-portada/1366_521.jpg'
 
-col1, col2 = st.columns(2)
-
-with col2:
-    st.image(axie_infiniti_logo_url, width=380)
+st.image(axie_infiniti_logo_url, width=700)
 
 st.markdown("## Axie Infinity investment thesis")
 st.markdown("##### *By Aquiba Benarroch, CFA*")
